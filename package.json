@@ -1,0 +1,41 @@
+{
+  "name": "react-starter",
+  "version": "1.0.0",
+  "description": "Base project to learn how to set up react local development environment.",
+  "main": "index.js",
+  "scripts": {
+    "test": "",
+    "start": "webpack-dev-server --mode development",
+    "eslint-fix": "eslint --fix \"src/**/*.js\"",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManhLQ/react-starter.git"
+  },
+  "author": "Manh Le",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ManhLQ/react-starter/issues"
+  },
+  "homepage": "https://github.com/ManhLQ/react-starter#readme",
+  "dependencies": {
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "eslint": "^5.15.1",
+    "eslint-config-react": "^1.1.7",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-react": "^7.12.4",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
