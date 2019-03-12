@@ -9,22 +9,27 @@ module.exports = {
     filename: 'bundle.js'
   },
   devServer: {
-    contentBase: './dist',
+    contentBase: path.join(__dirname, './dist'),
+    port: 3000,
     hot: true
   },
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: ['babel-loader', 'eslint-loader']
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
       }
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve('./index.html'),
-    }),
+      template: path.resolve('./public/index.html')
+    })
   ],
-  devtool: 'inline-source-map',
+  devtool: 'inline-source-map'
 };

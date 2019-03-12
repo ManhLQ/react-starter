@@ -20,6 +20,8 @@
   "rules": {
     "semi": ["error", "always"],
     "indent": ["warn", 2],
-    "quotes": ["warn", "single"]
+    "quotes": ["warn", "single"],
+    "space-before-function-paren": "off",
+    "no-console": ["warn"]
   }
 }
