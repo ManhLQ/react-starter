@@ -1,6 +1,6 @@
 {
   "name": "react-starter",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Base project to learn how to set up react local development environment.",
   "main": "src/index.js",
   "scripts": {
