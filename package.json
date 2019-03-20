@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Base project to learn how to set up react local development environment.",
   "main": "src/index.js",
+  "sideEffects": false,
   "scripts": {
     "test": "",
     "start": "webpack-dev-server --config webpack.dev.js --mode development",

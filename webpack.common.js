@@ -18,6 +18,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
+        sideEffects: true,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
       },
       {
