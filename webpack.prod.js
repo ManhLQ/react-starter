@@ -13,7 +13,10 @@ module.exports = merge(common, {
         sourceMap: true
       }),
       new OptimizeCSSAssetsPlugin({})
-    ]
+    ],
+    removeAvailableModules: true,
+    removeEmptyChunks: true,
+    mergeDuplicateChunks: true,
   },
   devtool: 'source-map',
   performance: {

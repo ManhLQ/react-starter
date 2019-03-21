@@ -44,10 +44,5 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'style.css'
     })
-  ],
-  optimization: {
-    removeAvailableModules: true,
-    removeEmptyChunks: true,
-    mergeDuplicateChunks: true,
-  }
+  ]
 };
