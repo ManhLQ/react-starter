@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Game } from './components';
 import './style.scss';
 
 class App extends Component {
@@ -9,11 +10,7 @@ class App extends Component {
   }
 
   render() {
-    return (
-      <div className="sgreeting">
-        <h1>Hello, world!</h1>
-      </div>
-    );
+    return <Game />;
   }
 }
 
